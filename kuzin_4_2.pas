@@ -15,7 +15,7 @@ begin
         xCoor := -xCoor;
     if yCoor < 0 then 
         yCoor := -yCoor;
-    if ((xCoor + yCoor) <= 1) then
+    if ((xCoor + yCoor) >= 1) and (((xCoor * xCoor) + (yCoor * yCoor)) <= 1) then
         writeln('ДА, точка попадает в заданную область')
     else
         writeln('НЕТ, точка выходит за пределы заданной области');
